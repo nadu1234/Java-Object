@@ -2,16 +2,17 @@
 // ガターで <icon src="AllIcons.Actions.Execute"/> アイコンをクリックします。
 public class Main {
     public static void main(String[] args) {
-        // 1.勇者を生成
-        Hero h = new Hero();
-        // 2.フィールドに初期値をセット
-        h.name = "ミナト";
-        h.hp = 100;
-        System.out.println("勇者" + h.name + "を生み出しました！");
-        // 3.勇者のメソッドを呼び出してゆく
-        h.sit(5);
-        h.slip();
-        h.sit(25);
-        h.run();
+        Hero h1 = new Hero();
+        h1.name = "ミナト";
+        h1.hp = 100;
+        Hero h2 = new Hero();
+        h2.name = "アサカ";
+        h2.hp = 100;
+        Wizard w = new Wizard();
+        w.name = "スガワラ";
+        w.hp = 50;
+        w.heal(h1);    // ミナトを回復させる（HP: 100 -> 110）
+        w.heal(h2);    // アサカを回復させる（HP: 100 -> 110）
+        w.heal(h2);    // アサカを回復させる（HP: 110 -> 120）
     }
 }
