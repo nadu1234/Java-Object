@@ -2,12 +2,10 @@
 // ガターで <icon src="AllIcons.Actions.Execute"/> アイコンをクリックします。
 public class Main {
     public static void main(String[] args) {
-        Hero h1 = new Hero();
-        h1.name = "ミナト";
-        h1.hp = 100;
+        Hero h1 = new Hero("ミナト");
+        System.out.println(h1.name);
         Hero h2 = new Hero();
-        h2.name = "アサカ";
-        h2.hp = 100;
+        System.out.println(h2.name);
         Wizard w = new Wizard();
         w.name = "スガワラ";
         w.hp = 50;

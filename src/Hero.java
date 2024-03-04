@@ -26,4 +26,12 @@ public class Hero {
         System.out.println("GAMEOVER");
         System.out.println("最終HPは" + this.hp + "でした");
     }
+    public Hero() {
+        this("ダミー");
+    }
+
+    public Hero(String name) {
+        this.hp = 100;
+        this.name = name;
+    }
 }

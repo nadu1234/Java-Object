@@ -1,4 +1,4 @@
-import java.util.Random;
+/*import java.util.Random;
 public class Cleric {
     String name;
     int hp = 50;
@@ -26,4 +26,4 @@ public class Cleric {
         System.out.println("MPが" + recoverActual + "回復した");
         return recoverActual;
     }
-}
+}*/
